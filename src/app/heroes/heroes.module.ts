@@ -25,7 +25,6 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HeroesRoutingModule,
     MaterialModule,
     FlexLayoutModule,
-    CiberLoginModule,
   ],
 })
 export class HeroesModule {}
