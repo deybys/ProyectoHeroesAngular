@@ -1,0 +1,21 @@
+<h1>LISTADO DE HÉROES</h1>
+<mat-divider></mat-divider>
+
+<div
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutAlign="center stretch"
+  fxLayoutGap="20px"
+>
+  <div
+    fxFlex="20"
+    class="tarjeta-centrada"
+    fxFlex.lg="15"
+    fxFlex.sm="30"
+    *ngFor="let heroe of heroes"
+  >
+    <app-heroe-tarjeta [heroe]="heroe"></app-heroe-tarjeta>
+  </div>
+</div>
+
+<cbl-ciber-login></cbl-ciber-login>

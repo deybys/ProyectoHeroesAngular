@@ -1,0 +1,49 @@
+<mat-sidenav-container class="menu-lateral">
+  <mat-sidenav #sidenav>
+   
+
+    <mat-toolbar>
+      <span>Menú</span>
+      <button mat-button color="primary" (click)="sidenav.toggle()">
+        <mat-icon>list</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-nav-list>
+      <a mat-list-item routerLink="./listado"
+      (click)="sidenav.toggle()">
+        <mat-icon>fact_check</mat-icon>
+        <span>Lista de heroes</span>
+      </a>
+
+      <a mat-list-item routerLink="./agregar" 
+      (click)="sidenav.toggle()">
+        <mat-icon>add</mat-icon>
+        <span>Agregar heroe</span>
+      </a>
+
+      <a mat-list-item routerLink="./buscar" 
+      (click)="sidenav.toggle()">
+        <mat-icon>search</mat-icon>
+        <span>Buscar heroe</span>
+      </a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar class="bg-dark nav-header" style="">
+    <button mat-button (click)="sidenav.toggle()">
+      <mat-icon class="icon-menu">list</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+  
+
+  <router-outlet></router-outlet>
+  <div>
+    <footer class="bg-dark">© Derechos Reservados | Ejército Nacional |</footer>
+  </div>
+
+</mat-sidenav-container>
+
